@@ -64,12 +64,11 @@ async function translateText(text, to) {
 
   const url = `${config.apiUrl}?from=${from}&to=en&text=${encodeURIComponent(text)}`;
 
-  console.log("API Url:", url); // Debug URL
+  console.log("API Url:", url);
 
   const response = await fetch(url);
   const data = await response.json();
-  console.log("API Response:", data); // Debug API response
-
+  console.log("API Response:", data);
   if (data.status && data.translated) {
     return data.translated;
   } else {
