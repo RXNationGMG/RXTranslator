@@ -1,0 +1,30 @@
+{
+  "name": "RXTranslator",
+  "version": "1.0.4",
+  "description": "A powerful Discord bot that breaks down language barriers. RXTranslator enables seamless translation of text and messages across a wide range of languages, fostering global conversations and cross-cultural interaction on your Discord server.",
+  "dependencies": {
+    "@discordjs/rest": "^1.3.0",
+    "axios": "^1.4.0",
+    "cld": "^2.9.0",
+    "discord-api-types": "^0.37.21",
+    "discord.js": "^13.16.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "franc": "^5.0.0",
+    "franc-all": "^6.0.0",
+    "fs": "^0.0.1-security",
+    "langdetect": "^0.2.1",
+    "langid": "^0.0.1",
+    "node-fetch": "^2.6.7",
+    "quick.db": "^7.1.3",
+    "translate-google-api": "^1.0.4",
+    "wanakana": "^5.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RXNationGMG/RXTranslator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RXNationGMG/RXTranslator/issues"
+  }
+}

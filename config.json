@@ -1,0 +1,11 @@
+{
+  "clientId": "824202332992045056",
+  "footerText": "RXTranslator | 2020 - 2023 | Limited Languages",
+  "maintenanceMode": false,
+  "statusText": "/help | Under Development | Version: 1.0.3",
+  "supportServerInvite": "https://discord.gg/TXPW3uWuKg",
+  "port": 3000,
+  "expressServerEnabled": true,
+  "apiUrl": "https://api.pawan.krd/gtranslate",
+  "apiUrlWarning": "WARNING: Do not modify the API URL unless you know what you are doing! This can cause unexpected behavior and break the bot's functionality. | Optional Link For API: https://api.pawan.krd/mtranslate (Recommended & Offers Almost All Of It's Languages)"
+}

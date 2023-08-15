@@ -1,0 +1,27 @@
+{
+  "name": "langid",
+  "version": "0.0.1",
+  "description": "Stand-alone language identification system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vunb/langid.git"
+  },
+  "keywords": [
+    "langid",
+    "language dectection",
+    "nlp"
+  ],
+  "author": "Vunb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vunb/langid/issues"
+  },
+  "homepage": "https://github.com/vunb/langid#readme",
+  "dependencies": {
+    "languagedetect": "^1.1.1"
+  }
+}
