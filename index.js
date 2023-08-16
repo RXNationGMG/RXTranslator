@@ -8,7 +8,7 @@ const config = require('./config.json');
 const intents = [
   Intents.FLAGS.GUILDS,
   Intents.FLAGS.GUILD_MESSAGES,
-  Intents.FLAGS.GUILD_MESSAGE_REACTIONS, // Correct intent for reaction events
+  Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
 ];
 
 const client = new Client({ intents });
@@ -24,7 +24,8 @@ client.translations = {
 const { commands, loadCommands } = require('./commandHandler');
 loadCommands();
 
-const { registerReactionEvent } = require('./functions/flagTranslation');
+// Register the messageReactionAdd event listener
+const { registerReactionEvent, flagToCountry } = require('./functions/flagTranslation');
 registerReactionEvent(client); // Register the messageReactionAdd event
 
 // Set up the ready event
@@ -45,19 +46,18 @@ if (config.expressServerEnabled) {
   expressServer(config);
 }
 
-// Register the messageReactionAdd event listener
+// Set up the messageReactionAdd event listener
 client.on('messageReactionAdd', async (reaction, user) => {
-  // Check if the reaction was added to a message the bot sent
   if (!user.bot && reaction.message.author.id === client.user.id) {
-    const emoji = reaction.emoji.name; // Get the emoji name (e.g., "🇵🇭")
+    const emoji = reaction.emoji.name;
 
-    // Find the corresponding country object from the updated flagEmojiList using the emoji
-    const countryData = flagEmojiList.languages.find((country) => country.emoji === emoji);
+    const countryCode = flagToCountry(emoji);
 
-    if (countryData) {
-      const { Language, "ISO-639 code": code } = countryData;
-      // Do something with the language name and ISO-639 code, e.g., use it to translate the message or perform an action
-      console.log(`${user.tag} reacted with ${emoji}, which represents ${Language} (${code}).`);
+    if (countryCode) {
+      const countryData = flagEmojiList.languages.find((country) => country["Country code"] === countryCode);
+      if (countryData) {
+        const { Language, "ISO-639 code": code } = countryData;
+      }
     }
   }
 });
