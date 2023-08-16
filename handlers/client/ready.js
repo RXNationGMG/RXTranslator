@@ -9,7 +9,7 @@ module.exports = async (client, clientId, config, translations) => {
   registerSlashCommands(clientId, translations);
 
   // GitHub version check
-  const repoURL = 'https://api.github.com/repos/RXNationGMG?RXTranslator/releases/latest';
+  const repoURL = 'https://api.github.com/repos/RXNationGMG/RXTranslator/releases/latest';
 
   try {
     const response = await fetch(repoURL);
