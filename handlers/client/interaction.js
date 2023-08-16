@@ -1,5 +1,11 @@
 const { sendEmbedMessage } = require('../../functions/embeds');
 
+/**
+ * Handle interactions (slash commands) sent by users
+ * @param {Client} client - The Discord.js client
+ * @param {Interaction} interaction - The interaction object
+ * @param {Collection} commands - A collection of registered commands
+ */
 module.exports = async (client, interaction, commands) => {
   if (!interaction.isCommand()) return;
 
