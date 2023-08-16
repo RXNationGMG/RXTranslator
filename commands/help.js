@@ -11,8 +11,13 @@ module.exports = {
     const commands = [
       {
         name: 'add-translator',
-        description: 'To add the translation channels (limited languages | limit: 5 for non-premium users)',
+        description: 'To add the translation channels (limited languages | limit: 3 for non-premium users)',
         usage: '/add-translator `main-channel:` #channel-name `translation-channel:` #translation-channel',
+      },
+      {
+        name: 'flag_translation',
+        description: 'To translate messages through Flags',
+        usage: '/flag_translation `status:` Enable',
       },
       {
         name: 'help',
@@ -48,7 +53,7 @@ module.exports = {
 
     const helpEmbed = new MessageEmbed()
       .setColor(getRandomColor())
-      .setAuthor(interaction.client.user.username, interaction.client.user.displayAvatarURL()) // Bot's Discord avatar and bot name on top
+      .setAuthor(interaction.client.user.username, interaction.client.user.displayAvatarURL())
       .setTitle(`RXTranslator's Commands`)
       .setDescription('Here is a list of available commands and their usage:');
 
