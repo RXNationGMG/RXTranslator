@@ -41,7 +41,6 @@ module.exports = async (client, message, config, commands, translations) => {
   let mainTranslationChannelId;
 
   try {
-    // Check if the message is Japanese and convert to Romaji (Latin characters)
     if (hasJapaneseCharacters(content)) {
       content = wanakana.toRomaji(content);
     }
@@ -56,7 +55,7 @@ module.exports = async (client, message, config, commands, translations) => {
 
       if (!mainTranslationChannelId) {
         console.error('The main translation channel is not set in the config for the given channel ID:', message.channel.id);
-        return; // Exit early if the main translation channel is not set
+        return;
       }
 
       // Check if the message is from any of the translation channels
@@ -105,7 +104,7 @@ module.exports = async (client, message, config, commands, translations) => {
     console.error('Error translating:', error);
 
     // Send the error message to the specific channel using the custom embed function
-    const errorChannelId = '928679002078588928'; // Replace this with the desired channel ID
+    const errorChannelId = ''; // Replace this with the desired channel ID
     const errorChannel = client.channels.cache.get(errorChannelId);
     if (errorChannel instanceof TextChannel) {
       const errorMessage = 'An error occurred while translating the message.';
@@ -113,7 +112,7 @@ module.exports = async (client, message, config, commands, translations) => {
       const { MessageEmbed } = require('discord.js');
       const embed = new MessageEmbed()
         .setColor('#FF0000')
-        .setAuthor(client.user.username, client.user.displayAvatarURL()) // Add bot's name and avatar to the top of the embed
+        .setAuthor(client.user.username, client.user.displayAvatarURL()) 
         .setDescription(errorMessage)
         .setFooter(config.footerText);
 
