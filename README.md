@@ -22,7 +22,7 @@ Welcome to RXTranslator, the ultimate Discord bot for breaking down language bar
 
 - **Auto Language Detection:** No need to specify the source language! RXTranslator automatically detects the input language and provides accurate translations.
 
-- **Flag Emoji Translator:** ~~Want to have fun with flag emojis? Just use the bot to translate text into flag emojis representing different languages.~~ (Soon)
+- **Flag Emoji Translator:** Want to have fun with flag emojis? Just use the bot to translate text into flag emojis representing different languages. (Beta)
 
 - **Powerful API Integration:** RXTranslator utilizes the latest translation APIs to ensure accurate and reliable translations, supporting a vast range of languages.
 
