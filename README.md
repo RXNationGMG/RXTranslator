@@ -1,6 +1,8 @@
-# RXTranslator
+# RXTranslator 🤖
 
-## Table of Contents
+![RXTranslator Logo](https://cdn.discordapp.com/attachments/889544904236224622/1141269036961898557/image.png)
+
+## Table of Contents 📕
 - [Introduction](#introduction)
 - [Features](#features)
 - [Requirements](#requirements)
@@ -12,11 +14,11 @@
 - [Contributing](#contributing)
 - [License](#license)
 
-## Introduction
+## Introduction ❓
 
 Welcome to RXTranslator, the ultimate Discord bot for breaking down language barriers and enhancing communication on your server! Whether you're chatting with friends from around the globe, exploring foreign content, or just curious about different languages, RXTranslator has got you covered. Powered by advanced translation technology, this bot can seamlessly translate text and messages between a wide variety of languages, making multilingual interactions smooth and effortless.
 
-## Features
+## Features 🔰
 
 - **Slash Commands Support:** RXTranslator supports Discord's latest slash commands, making it easy to access translation functionality with simple and intuitive commands.
 
@@ -34,13 +36,13 @@ Welcome to RXTranslator, the ultimate Discord bot for breaking down language bar
 
 - **Extensible and Open Source:** The bot's code is written in JavaScript and provided as open source, allowing developers to contribute and build upon its functionality.
 
-## Requirements
+## Requirements ℹ
 
 - Node.js v16 or higher
 - 100MB Or More of Storage Space
 - VPS Server (Optional)
 
-## Installation
+## Installation 🔧
 
 1. Clone this repository to your local machine.
 
@@ -50,7 +52,7 @@ Welcome to RXTranslator, the ultimate Discord bot for breaking down language bar
 npm install
 ```
 
-## Configuration
+## Configuration ⚙
 
 Before running the bot, you need to configure the `config.json` file with the appropriate settings:
 
@@ -74,7 +76,7 @@ DISCORD_TOKEN=YOUR_TOKEN
 
 Make sure to replace `YOUR_TOKEN` and `THE_BOT_CLIENT_ID` with your bot's actual token and client ID.
 
-## Usage
+## Usage ❗
 
 Once the bot is installed and configured, run the following command to start the bot:
 
@@ -98,17 +100,17 @@ The bot will automatically detect the language and provide the translation.
 
 For a full list of available commands and their usage, type `/help` in any channel where the bot is active.
 
-## Code Claiming
+## Code Claiming 💻
 
 This code is solely made by RXNationGaming. Any unauthorized use, distribution, or claiming of this code as someone else's work is strictly prohibited.
 
-## Invite Our Bot
+## Invite Our Bot 🤖
 
 If you don't want to self-host it by yourself, you can invite our Discord Bot here :
 
 [Invite Our Bot Here](https://discord.com/api/oauth2/authorize?client_id=824202332992045056&permissions=2147601408&scope=bot%20applications.commands)
 
-## Support and Community
+## Support and Community 🌎
 
 For questions, feedback, bug reports, or general discussions related to RXTranslator, join our dedicated support server:
 
@@ -116,10 +118,10 @@ For questions, feedback, bug reports, or general discussions related to RXTransl
 
 Our friendly community and developers are there to help and make your experience with RXTranslator enjoyable.
 
-## Contributing
+## Contributing 🛠
 
 We welcome contributions to improve RXTranslator! If you have any feature suggestions, bug fixes, or improvements, feel free to open an issue or submit a pull request on our GitHub repository.
 
-## License
+## License ℹ
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
