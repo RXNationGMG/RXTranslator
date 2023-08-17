@@ -1,5 +1,9 @@
 # RXTranslator 🤖
 
+[![RXNationGaming](https://img.shields.io/discord/889339328470323212?color=5865F2&logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/TXPW3uWuKg)
+![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
+[![Language](https://img.shields.io/github/languages/top/ProbablyRaging/CreatorBot?color=f0db4f&logoColor=white&style=for-the-badge)]()
+[![Library](https://img.shields.io/badge/library-discord.js-5865f2?style=for-the-badge)](https://www.npmjs.com/package/discord.js)
 ![RXTranslator Logo](https://cdn.discordapp.com/attachments/889544904236224622/1141269036961898557/image.png)
 
 ## Table of Contents 📕
